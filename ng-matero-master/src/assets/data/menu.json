@@ -1,0 +1,100 @@
+{
+  "menu": [
+    {
+      "route": "dashboard",
+      "name": "solargeneration",
+      "type": "link",
+      "icon": "dashboard"
+    },
+    {
+      "route": "design",
+      "name": "scheduling",
+      "type": "link",
+      "icon": "color_lens"
+      
+    },
+    {
+      "route": "material",
+      "name": "planthealthindex",
+      "type": "sub",
+      "icon": "favorite",
+      "children": [
+        {
+          "route": "",
+          "name": "test1",
+          "type": "link"
+        },
+        {
+          "route": "",
+          "name": "test2",
+          "type": "link"
+        },
+        {
+          "route": "",
+          "name": "test3",
+          "type": "link"
+        },
+        {
+          "route": "",
+          "name": "test4",
+          "type": "link"
+        }
+      ]
+        
+        
+    },
+    {
+      "route": "media",
+      "name": "predictivemaintenance",
+      "type": "sub",
+      "icon": "image",
+      "children": [
+        {
+          "route": "gallery",
+          "name": "plant",
+          "type": "link"
+        },
+        {
+          "route": "gallery",
+          "name": "solararray",
+          "type": "link"
+        },
+        {
+          "route": "gallery",
+          "name": "inverter",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "route": "permissions",
+      "name": "reports",
+      "type": "sub",
+      "icon": "lock",
+      "children": [
+        {
+          "route": "role-switching",
+          "name": "report1",
+          "type": "link"
+        },
+        {
+          "route": "route-guard",
+          "name": "report2",
+          "type": "link",
+          "permissions": {
+            "except": "GUEST"
+          }
+        },
+        {
+          "route": "test",
+          "name": "report3",
+          "type": "link",
+          "permissions": {
+            "only": "ADMIN"
+          }
+        }
+      ]
+    }
+  ]
+}
+  
